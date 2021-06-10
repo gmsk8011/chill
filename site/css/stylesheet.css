@@ -1,0 +1,385 @@
+body {
+	/*background-color: #ffa1bd;*/
+	background: rgb(244,0,199);
+	background: linear-gradient(221deg, rgba(244,0,199,1) 0%, rgba(251,255,3,1) 61%, rgba(0,14,231,1) 100%); 
+}
+
+#header-nav {
+	background-color: #2ae6b0;
+	border: 0;
+	border-radius: 0px;
+	height: auto;
+	padding: 8px; 
+	text-align: left;
+	box-shadow: 1px 1px 10px #747474;
+}
+
+#logo-img {
+	background: url('logo.png') no-repeat;
+	width: 75px;
+	height: 75px;
+	margin: 5px 20px 10px 0px;
+	/*border: 10px grey;	
+	/*padding: 3px;*/
+}
+
+.navbar-brand {  
+  /*padding-left: 0;*/
+  /*right: 100px;*/
+}
+
+.navbar-brand h1 { /* company name */
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-size: 2.1em;
+  text-shadow: 1px 1px 1px #222;
+  /*margin-top: 0;*/
+  /*margin-bottom: 0;*/
+  margin: 0;
+  padding-top: 11px;
+  line-height: .75	;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.8;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  font-size: 1.06em;
+}	
+
+#nav-list {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+#nav-list a {
+  color: #000000;
+  text-align: center;
+}
+#nav-list a:hover {
+  /*background: #E7E7E7;*/
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -40px;
+}
+
+.container .jumbotron {
+	box-shadow: 0 0 40px #3F0C1F;
+    border: 2px solid #3F0C1F;
+}
+
+/*Latest updates*/
+/*#latest-updates-title {
+  text-align: left;
+  font-family: 'Zen Dots', cursive;
+  font-family: 'Dela Gothic One', cursive;
+
+}*/
+.content {
+  width: 90%;
+  margin: 30px auto 30px;
+  border: 1px black;
+
+}
+.content .main-content {
+  width: 100%;
+  border: 1px solid blue;
+}
+
+h2{
+  color: black;
+  font-family: 'Dela Gothic One', cursive;
+}
+.content .main-content .post{
+  width: 95%;
+  height: 270px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background: white;
+  /* border: 1px solid blue; */
+}
+
+.content .main-content .post-image {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.content .main-content p {
+  margin: 20px;
+}
+
+.text-center {
+  text-align: left;
+  font-family: 'Dela Gothic One', cursive; 
+  margin: 20px;
+}
+
+/*POSTS*/
+.posts section {
+  margin-bottom: 20px;
+}
+.posts-description {
+  color: solid black;
+  font-size: 1.1em;
+  text-align: justify;
+  font-family: Montserrat;
+}
+.posts-img {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+h3 a {
+  color: black;
+}
+
+
+/*Footer*/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  text-decoration: none;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+
+.panel-footer a {
+  color: white; 
+}
+
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+a:hover, a:hover {
+    text-decoration: none;
+}
+
+#footer-menu {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  list-style: none;
+  color: red;
+}
+
+#footer-menu li {
+  margin-right: 45px;
+} 
+
+li {
+    display: list-item;
+    text-align: center;
+}
+
+#address {
+  text-align: center;
+}
+
+div.text-center {
+  color: white;
+  text-align: center;
+}
+
+.panel-footer section hr {
+    width: 50%;
+  }
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	.container .jumbotron {
+    background: url('../images/marvin-1200.jpg') no-repeat;
+    height: 800px;
+    margin-top: 15px;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+ /* #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }*/
+  /* End Header */
+
+/*Home Page*/
+.container .jumbotron {
+    background: url('../images/nasa-992.jpg') no-repeat;
+    height: 661px;
+    margin-top: 15px;
+  }
+}
+
+#release-tile, #news-tile, #offer-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#release-tile:hover, #news-tile:hover, #offer-tile:hover {
+  box-shadow: 0 1px 5px 1px #000000;
+}
+#release-tile {
+  background: url('../images/tim-250.jpg') no-repeat;
+  background-position: center;
+}
+#news-tile {
+  background: url('../images/alex-250.jpg') no-repeat;
+  background-position: center;
+}
+#offer-tile {
+  background: url('../images/offer-250.jpg') no-repeat;
+  background-position: center;
+}
+#release-tile span, #news-tile span, #offer-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+}
+
+
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.container .jumbotron {
+    background: url('../images/marvin-768.jpg') no-repeat;
+    height: 512px;
+    margin-top: 15px;
+  }
+  #offer-tile {
+    width: 375px;
+    margin: 0 auto 15px;
+  }
+  
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 0px;
+    /*padding-bottom: 10px;*/
+    font-size: 5.1vw;  /*1vw = 1% of viewport width */
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  } 
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .posts {
+    margin: 20px;
+  }
+
+  #release-tile, #news-tile, #offer-tile {
+  	width: 375px;
+  	margin: 0 auto 15px;
+  }
+
+  #latest-updates-title {
+    text-align: center;
+  }
+
+}
+
+  /*FOOTER*/
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+/*div.navbar-brand {
+  clear: both;
+  margin-top: -11px;
+}*/
+ 
+	
+/*#thank {
+	text-align: center;
+	font-size: 27px;
+	font-family: 'Comic Neue', cursive;
+}
+
+#foot {
+	text-align: center;
+}
+
+footer ul {
+	font-size: 17px;
+}*/
+
+/*a:link, a:visited {
+	text-decoration: none;
+	background-image: linear-gradient(to right, pink , orange, skyblue);
+	border: 1px solid grey;
+	border-radius: 25px;
+	color: black;
+	display: block;
+	padding: 4px; 
+	width: 270px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 4px;
+	font-size: 20px;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	background-color: orange;
+	border: 2.5px solid black;
+	/*text-shadow: 2px 2px grey;
+}*/
