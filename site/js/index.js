@@ -3,12 +3,12 @@ function hr() {
   setInterval(() => {
     a = new Date();
     if (a.getSeconds() < 10) {
-      sec = a.getSeconds() + 10;
+      sec = '0' + a.getSeconds();
     }
     else
      sec = a.getSeconds();
     if (a.getMinutes() < 10) {
-      min = a.getMinutes() + 10;
+      min = '0' + a.getMinutes();
     }
     else
      min = a.getMinutes();
