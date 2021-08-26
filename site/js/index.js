@@ -22,6 +22,7 @@ function hr() {
 function hrr() {
   setInterval(() => {
     a = new Date();
+    hr = a.getHours() - 12;
     if (a.getSeconds() < 10) {
       sec = '0' + a.getSeconds();
     }
@@ -33,8 +34,8 @@ function hrr() {
     else
      min = a.getMinutes();
     
-    let time = a.getHours() - 12 + ':' + min + ':' + sec + ' PM';
-    let tim = 'Time ' + a.getHours() - 12 + ':' + min;
+    let time = hr + ':' + min + ':' + sec + ' PM';
+    let tim = 'Time ' + hr  + ':' + min + ' PM';
     document.getElementById('time').innerHTML = time;
     document.getElementById('tab').innerHTML = tim;
   }, 1000);
@@ -54,7 +55,8 @@ function hrrr() {
      min = a.getMinutes();
     
     let time = a.getHours() + 12 + ':' + min + ':' + sec + ' AM';
-    let tim = a.getHours() + 12 + ':' + min;      document.getElementById('time').innerHTML = time;
+    let tim = a.getHours() + 12 + ':' + min + ' PM';      
+    document.getElementById('time').innerHTML = time;
     document.getElementById('tab').innerHTML = tim;
   }, 1000);
 }

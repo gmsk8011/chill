@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@font-face {
+  font-family: 'digital-7regular';
+  src: url('../fonts/digital-7-webfont.woff2') format('woff2'),
+       url('../fonts/digital-7-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body{
   background-color: black;
   color: lime;
-  font-family: 'Patrick Hand', cursive;
-}
-
-h1, div{
-  text-align: center;
-}
-
-h1{
-  font-size: 100px;
+  font-family: 'digital-7regular';
 }
 
 div{
-  font-size: 60px;
+  text-align: center;
+}
+
+div{
+  font-size: 280px;
 }
